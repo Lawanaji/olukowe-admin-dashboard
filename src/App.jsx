@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Home from "./pages/home/Home"
-import Dashboard from "./pages/dashboard/dashboard"
+// import Home from "./pages/home/Home"
+import Dashboard from "./pages/dashboard/Dashboard"
 import Main from "./pages/dashboard/main/Main"
 import { Users } from "./pages/dashboard/users/Users"
 import { Revenue } from "./pages/dashboard/revenue/Revenue"
@@ -13,7 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
 
 
           <Route path="/dashboard" element={<Dashboard/>}>
