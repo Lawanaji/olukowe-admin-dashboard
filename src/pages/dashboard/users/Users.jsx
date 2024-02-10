@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaArrowAltCircleDown } from 'react-icons/fa'
-import { CiFilter } from "react-icons/ci";
-import { Filter } from './Filter';
+// import { Filter } from './Filter';
+import { LuArrowUpDown} from "react-icons/lu";
+import Filter from './Filter';
 
 const TABLE_HEAD = ["Email", "Username", "Age", "Gender", "Location", "subscription", "Retention"]
 const TABLE_ROW = [
@@ -12,7 +12,7 @@ const TABLE_ROW = [
     gender: 'Male',
     location: 'Nigeria',
     subscription: 'Full Products',
-    retention: <span className='inline-block'><FaArrowAltCircleDown /> </span>
+    retention: <span className='inline-block text-green-700'><LuArrowUpDown /> </span>
   },
   {
     email: 'Bankoleguy@gmail.com',
@@ -21,7 +21,7 @@ const TABLE_ROW = [
     gender: 'Male',
     location: 'Nigeria',
     subscription: 'Full Products',
-    retention: <span className='inline-block'><FaArrowAltCircleDown /> </span>
+    retention: <span className='inline-block text-green-700'><LuArrowUpDown /> </span>
   },
   {
     email: 'Sisi_lolade@gmail.com',
@@ -30,7 +30,7 @@ const TABLE_ROW = [
     gender: 'Male',
     location: 'Nigeria',
     subscription: 'Full Products',
-    retention: <span className='inline-block'><FaArrowAltCircleDown /> </span>
+    retention: <span className='inline-block text-green-700'><LuArrowUpDown /> </span>
   },
   {
     email: 'feyi29@gmail.com',
@@ -38,8 +38,8 @@ const TABLE_ROW = [
     age: '18',
     gender: 'Femile',
     location: 'United Kingdom',
-    subscription: 'Full Products',
-    retention: <span className='inline-block'><FaArrowAltCircleDown /> </span>
+    subscription: 'Half Products',
+    retention: <span className='inline-block text-red'><LuArrowUpDown /> </span>
   },
   {
     email: 'Varox@gmail.com',
@@ -48,7 +48,7 @@ const TABLE_ROW = [
     gender: 'Female',
     location: 'South africa',
     subscription: 'Half Products',
-    retention: <span className='inline-block'><FaArrowAltCircleDown /> </span>
+    retention: <span className='inline-block text-red'><LuArrowUpDown /> </span>
   }
  
 ]
@@ -58,7 +58,6 @@ export const Users = () => {
     <div className='flex justify-between  items-center gap-4 mb-6'> 
  
 <h1 className=' text-xl font-bold md:text-2xl'>User Details</h1>
-{/* <button className='w-[5rem] flex items-center justify-centercursor -pointer bg-primary text-white rounded-lg'> <p>filter</p></button> */}
 <Filter />
 </div >
 

@@ -1,15 +1,28 @@
-import React, { useState } from 'react'
-import { CiFilter } from 'react-icons/ci'
+import React, { useState } from 'react';
 
-export const Filter = () => {
-    const [showFilter, setShowFilter] = useState(false)
+const Filter = () => {
+  const [filter, setFilter] = useState('');
+
+  const handleChangeFilter = event => {
+    setFilter(event.target.value);
+  }
 
   return (
-    <div className='flex justify-start items-center gap-1 bg-primary text-white rounded-md py-1 px-2 relative' >
-        <CiFilter />
-        <span>Filter</span> 
-
-
+    <div>
+      <label htmlFor="filter">Filter: </label>
+      <select
+        name="filter"
+        value={filter}
+        onChange={handleChangeFilter}
+      >
+        <option value="">Filter</option>
+        <option value="name">Subscription</option>
+        <option value="date">Retention</option>
+        <option value="category">Location</option>
+        <option value="category">Gender</option>
+      </select>
     </div>
   )
-}
+};
+
+export default Filter;
