@@ -1,7 +1,10 @@
 
 import {Chart as ChartJS} from 'chart.js/auto'
 import { Bar } from 'react-chartjs-2';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { FaSortAmountDownAlt } from "react-icons/fa";
+
+import 'react-circular-progressbar/dist/styles.css';
+import { TimeTask } from './TImeTask';
 
 
 export const ChartBar = () => {
@@ -21,7 +24,7 @@ export const ChartBar = () => {
 
   }
 
-  const percentage = [60]
+
   
   return (
 
@@ -45,13 +48,26 @@ export const ChartBar = () => {
         
       }/>
     </div>
-    <div className='flex'>
-      
-   <CircularProgressbar value={`${percentage}%`}  className= 'w-[100px] text-blacks rounded-full fill-none stroke-slate-300' />
+ 
+      <div className='py-10'>
+      <span className='flex justify-between'>
+        <p>Time on Task</p>
 
-    </div>  
-    </div>
+        <span className='flex items-center gap-3'>sort
+
+<FaSortAmountDownAlt className='text-primary' />
+
+        </span>
+
+      </span>
+      <div className='p-3'>
+     <TimeTask />
+
+      </div>
+      </div>
    
+     
+    </div>
     </>
    
   );
