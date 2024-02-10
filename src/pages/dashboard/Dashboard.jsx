@@ -20,7 +20,7 @@ const Dashboard = () => {
         <div className="  w-full md:w-[calc(100%-200px)] h-[calc(100vh-60px)] transition-all absolute  top-[60px] left-0 md:left-[200px] border-gray-300 bg-white overflow-y-scroll p-4">
            <Outlet/>
         </div>
-
+        
     </div>
   )
 }
