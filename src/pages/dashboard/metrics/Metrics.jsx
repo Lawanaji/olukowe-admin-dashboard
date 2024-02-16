@@ -1,5 +1,6 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import { OngoingTask } from "./OngoingTask";
 
 const TABLE_HEAD = ["Tracker", "Open", "Closed", "Total"];
 const TABLE_ROW  = [
@@ -31,8 +32,16 @@ export const Metrics = () => {
     const percentage = 95;
     return (
         <div className=" w-full h-screen md:flex-row flex-col-reverse md:flex justify-between">
-            <div className="bg-primary w-full h-screen overflow-y-hidden md:[calc(100%-35%)] md:h-screen">hello world</div>
-            <div className=" w-full  md:w-[35%]  md:p-5">
+            <div className="w-full h-screen overflow-y-hidden md:[calc(100%-35%)] md:h-screen">
+              <div className="h-[50%]">
+
+              </div>
+
+              <div>
+              <OngoingTask />
+              </div>
+            </div>
+            <div className=" w-full  md:w-[45%]  md:p-5">
                 <h1>Customer Satisfaction</h1>
                 <div className="flex gap-5">
                     <CircularProgressbar value={percentage} text={`${percentage}%`} className="w-[100px] h-[150px]" styles={buildStyles({ textColor: "black", pathColor: "green" })} />

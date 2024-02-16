@@ -30,7 +30,7 @@ export const ChartBar = () => {
 
     <>
 
-      <div className=' md:w-[50%] h-screen  sm:h-96 space-y-2 '>
+      <div className= 'w-full md:w-[50%] h-screen  sm:h-96 space-y-2 '>
    <h1 className='text-2xl font-semibold'>Session length</h1>
     <div className='rounded-md p-10 bg-gray'>
       <Bar data={{

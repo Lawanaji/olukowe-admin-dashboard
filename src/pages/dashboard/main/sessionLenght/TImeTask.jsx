@@ -12,8 +12,8 @@ export const TimeTask = () => {
     const blogpercentage =  75
     const Youtubegenerator = 100
   return (
-    <div className='w-full h-screen '>
-          <span className='flex justify-between items-center'>
+    <div className='w-full h-screen text-[#001633B2]'>
+          <span className='flex justify-between items-center '>
           <img src={ebook} alt="" />
 
           <div className='text-xl'>
