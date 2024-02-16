@@ -80,7 +80,7 @@ const handleChangeCalender = event =>{
   return (
 
     <>
-  <div className='h-screen'>
+  <div className=' w-full h-screen'>
   <div className='  flex justify-between  items-center gap-4 mb-6'> 
  
  <h1 className=' text-xl font-bold md:text-2xl'>Filter</h1>
@@ -92,7 +92,6 @@ const handleChangeCalender = event =>{
         onChange={handleChangeCalender}
        
       >
-        <option value="">Select calender</option>
         <option value="name">Days</option>
         <option value="date">Weeks</option>
         <option value="category">Month</option>
