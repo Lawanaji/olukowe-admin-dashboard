@@ -9,7 +9,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 function BoxWrapper ({children}){
   return(
-    <div className='bg-secondary rounded-md w-full h-[100px] gap-5 md:h-[50px]border border-gray-200 border-none flex justify-center  items-center'>{children}</div>
+    <div className='bg-secondary rounded-md w-full h-[100px] gap-5 md:h-[50px]border border-gray-200 border-none flex justify-center text-[#001633B2]  items-center'>{children}</div>
   )
 } 
 
