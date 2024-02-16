@@ -3,9 +3,9 @@ import { MainStaticCards } from "./mainStaticCard/MainStaticCards"
 
 const Main = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full h-screen'>
 <MainStaticCards/>
-<div className="w-full h-[20%] pt-10 grid md:flex">
+<div className="w-full h-screen md:h-[20%] pt-10 grid md:flex">
 <Analytics/>
 </div>
     </div>
